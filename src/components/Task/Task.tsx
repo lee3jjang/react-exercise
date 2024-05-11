@@ -3,7 +3,9 @@ import { TTask } from "../../types";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
-export const Task = ({ id, title }: TTask) => {
+type TProps = TTask;
+
+export const Task = ({ id, title }: TProps) => {
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({ id });
 
