@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { DndContext, closestCorners } from "@dnd-kit/core";
+import "./App.css";
+import { useState } from "react";
+import { Column } from "./components";
+import type { TColumn } from "./types";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tasks, setTasks] = useState<TColumn[]>([
+    { id: 1, title: "Add tests to homepage" },
+    { id: 2, title: "Fix styling in about section" },
+    { id: 3, title: "Learn how to center a div" },
+  ]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <h1>My Tasks</h1>
+      <DndContext collisionDetection={closestCorners}></DndContext>
+      <Column tasks={tasks} />
+    </div>
+  );
 }
 
-export default App
+export default App;
