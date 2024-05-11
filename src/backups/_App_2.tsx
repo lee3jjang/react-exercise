@@ -1,6 +1,6 @@
 import { DndContext, DragEndEvent } from "@dnd-kit/core";
 import "./App.css";
-import { Draggable, Droppable } from "./components";
+import { Draggable, Droppable } from "../components";
 import { useState } from "react";
 
 function App() {

@@ -10,8 +10,8 @@ import {
 } from "@dnd-kit/core";
 import "./App.css";
 import { useState } from "react";
-import { Column, Input } from "./components";
-import type { TTask } from "./types";
+import { Column, Input } from "../components";
+import type { TTask } from "./_types_3";
 import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 
 function App() {

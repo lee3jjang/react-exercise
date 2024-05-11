@@ -1,5 +1,5 @@
 import "./Task.css";
-import { TTask } from "../../types";
+import { TTask } from "../../backups/_types_3";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 

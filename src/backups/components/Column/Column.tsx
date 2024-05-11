@@ -1,5 +1,5 @@
 import "./Column.css";
-import { TTask } from "../../types";
+import { TTask } from "../../backups/_types_3";
 import {
   SortableContext,
   verticalListSortingStrategy,
