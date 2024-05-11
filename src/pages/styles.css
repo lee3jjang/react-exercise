@@ -1,0 +1,32 @@
+.page {
+  height: 100vh;
+  padding-top: 96px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #333;
+  background-color: #ffb996;
+  overflow-y: scroll;
+}
+
+.home {
+  background-color: #d9edbf;
+}
+
+.products {
+  background-color: #ffb996;
+}
+
+.about {
+  background-color: #fdffab;
+}
+
+.contact {
+  background-color: #ffcf81;
+}
+
+/** Products page */
+.product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
