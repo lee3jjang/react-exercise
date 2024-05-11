@@ -1,7 +1,7 @@
 import { FaSearch } from "react-icons/fa";
 import "./SearchBar.css";
 import { useState } from "react";
-import { TUser } from "../../types";
+import { TUser } from "../../../types";
 
 type Props = {
   setResults: React.Dispatch<React.SetStateAction<TUser[]>>;

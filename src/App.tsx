@@ -1,18 +1,7 @@
-import { useState } from "react";
 import "./App.css";
-import { SearchResultsList, SearchBar } from "./components";
-import { TUser } from "./types";
 
 function App() {
-  const [results, setResults] = useState<TUser[]>([]);
-  return (
-    <div className="App">
-      <div className="search-bar-container">
-        <SearchBar setResults={setResults} />
-        <SearchResultsList results={results} />
-      </div>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

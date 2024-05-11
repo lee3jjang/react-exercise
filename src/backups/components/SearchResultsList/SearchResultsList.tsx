@@ -1,4 +1,4 @@
-import { TUser } from "../../types";
+import { TUser } from "../../../types";
 import { SearchResult } from "../SearchResult/SearchResult";
 import "./SearchResultsList.css";
 

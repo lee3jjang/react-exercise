@@ -1,4 +1,2 @@
-export * from "./Draggable";
-export * from "./Droppable";
-export * from "./SearchBar";
-export * from "./SearchResultsList";
+export * from "../backups/components/SearchBar";
+export * from "../backups/components/SearchResultsList";
