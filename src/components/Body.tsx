@@ -1,12 +1,20 @@
 import { ReactNode } from "react";
 import "./Body.css";
+import { motion } from "framer-motion";
 
-type Props = { children: ReactNode };
+type Props = { children: ReactNode; delay?: number };
 
-export const Body = ({ children }: Props) => {
+export const Body = ({ children, delay = 0 }: Props) => {
   return (
     <div className="body-container">
-      <p>{children}</p>
+      <motion.p
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "-100%" }}
+        transition={{ duration: 0.5, delay }}
+      >
+        {children}
+      </motion.p>
     </div>
   );
 };
