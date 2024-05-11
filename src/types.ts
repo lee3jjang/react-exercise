@@ -1,4 +1,4 @@
-export type TColumn = {
+export type TTask = {
   id: number;
   title: string;
 };
