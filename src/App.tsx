@@ -1,15 +1,15 @@
 import "./App.css";
-import { Navbar } from "./components";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { About, Contact, Home, Products } from "./pages";
 
 import { AnimatePresence } from "framer-motion";
+import { Sidebar } from "./components";
 
 function App() {
   const location = useLocation();
   return (
-    <div className="App">
-      <Navbar />
+    <div className="flex">
+      <Sidebar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
